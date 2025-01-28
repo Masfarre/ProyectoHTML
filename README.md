@@ -93,4 +93,7 @@ La sección de noticias se actualiza dinámicamente, trayendo las últimas noved
 El cambio de tema entre modo claro y oscuro se maneja con JavaScript. Al hacer clic en el ícono del tema, se activa la función `toggleTheme()`, que agrega o elimina la clase `dark-mode` del `<body>` y actualiza el `localStorage` para recordar la preferencia del usuario.
 
 
+
+### Todo comprobado en la W3C y sin ningun error 
+
    
