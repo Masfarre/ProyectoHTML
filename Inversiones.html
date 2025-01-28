@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CryptoVision - Tu guía para invertir en criptomonedas.">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>CryptoVision</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header class="header">
+  <div class="header__logo">
+    <a href="index.html">
+      <img src="assets/logo.png" alt="Logo de CryptoVision" class="header__logo-img">
+      <h1 class="header__logo-text">CryptoVision</h1>
+      </a>
+  </div>
+  <nav class="header__nav">
+    <ul class="header__nav-list">
+      <li class="header__nav-item"><a href="inversiones.html" class="header__nav-link">Invierte en cripto</a></li>
+      <li class="header__nav-item"><a href="contacto.html" class="header__nav-link">Contacto</a></li>
+      <li class="header__nav-item"><a href="reseñas.html" class="header__nav-link">Reseñas</a></li>
+    </ul>
+  </nav>
+  <div class="header__search-theme">
+    <input type="text" placeholder="Buscar..." class="header__search-input" id="search-input">
+    <button class="header__search-button" aria-label="Buscar" onclick="toggleSearch()">🔍</button>
+    <button class="header__auth-button">Login</button>
+    <button class="header__auth-button register-button">Register</button>
+    <button class="header__theme-toggle" aria-label="Cambiar tema" onclick="toggleTheme()">
+      <span class="header__theme-icon" id="theme-icon">☀️</span>
+    </button>
+  </div>
+</header>
+<main class="main">
+         <!-- Sección de monedas con mayor subida en 24h -->
+        <section class="main__section main__section--left">
+            <h2 class="main__section-title">Monedas con mayor subida en 24h</h2>
+            <table id="top-crypto" class="main__crypto-table">
+                <thead>
+                    <tr>
+                        <th>Moneda</th>
+                        <th>Precio Actual</th>
+                        <th>% Subida</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Los datos de las monedas se insertarán dinámicamente aquí -->
+                </tbody>
+            </table>
+        </section>
+    <!-- Sección de conversión de criptomonedas -->
+    <section class="main__section main__section--right">
+        <h2 class="main__section-title">Convertir dinero a criptomonedas</h2>
+        <form id="crypto-conversion-form">
+            <label for="crypto-select">Seleccionar criptomoneda</label>
+            <select id="crypto-select">
+                <!-- Las 100 criptomonedas más conocidas se llenarán dinámicamente -->
+            </select>
+            <input type="number" id="amount" placeholder="Cantidad en USD" required>
+            <button type="submit" id="convert-button">Convertir</button>
+        </form>
+        <p id="conversion-result"></p>
+    </section>
+    <!-- Sección de Noticias -->
+    <section class="crypto-news">
+      <h2 class="crypto-news__title">🔔 Noticias Recientes del Mundo Cripto</h2>
+      <ul class="crypto-news__list">
+          <li class="crypto-news__item">
+   . ¿Serás parte de la próxima ola de inversión?</a>
+          </li>           <a href="#" class="crypto-news__link">🚀 <strong>Bitcoin a la caza del cielo:</strong> ¡Bitcoin acaba de superar los $100,000 y las señales apuntan a un despegue aún mayor! Los analistas están convencidos de que el futuro cripto está más brillante que nunca
+          <li class="crypto-news__item">
+              <a href="#" class="crypto-news__link">💎 <strong>Ethereum conquista el mercado:</strong> Ethereum está en una carrera imparable, con su valor subiendo más rápido que un cohete. Los expertos creen que la altcoin podría ser la próxima gran historia de éxito en la criptoindustria. ¡Estás a tiempo para unirte al tren!</a>
+          </li>
+          <li class="crypto-news__item">
+              <a href="#" class="crypto-news__link">🔥 <strong>Binance Coin rompiendo récords:</strong> BNB no deja de sorprender. Con el crecimiento de Binance, esta criptomoneda sigue demostrando su fuerza. ¿Es este el momento de poner tus apuestas en BNB? El mercado sigue volátil, pero lleno de oportunidades.</a>
+          </li>
+          <li class="crypto-news__item">
+              <a href="#" class="crypto-news__link">🌕 <strong>Cardano vs. Solana:</strong> La batalla de las altcoins se intensifica. Cardano ha comenzado a desplazar a Solana en cuanto a popularidad y funcionalidad. ¿Quién dominará el espacio DeFi? La competencia está más feroz que nunca.</a>
+          </li>
+          <li class="crypto-news__item">
+              <a href="#" class="crypto-news__link">💡 <strong>NFTs: el futuro está aquí:</strong> Los NFTs siguen deslumbrando con su capacidad para cambiar la forma en que pensamos sobre la propiedad digital. Ya no es solo arte, ¡es una revolución completa! Si aún no te has adentrado en el mundo de los NFTs, es el momento perfecto.</a>
+          </li>
+      </ul>
+  </section>
+  
+
+</main>
+
+<footer class="footer">
+    <div class="footer__container">
+      <p class="footer__text">© 2025 CryptoVision. Todos los derechos reservados.</p>
+      <ul class="footer__links">
+        <li><a href="terminos.html" class="footer__link">Términos y condiciones</a></li>
+        <li><a href="privacidad.html" class="footer__link">Política de privacidad</a></li>
+        <li><a href="contacto.html" class="footer__link">Contacto</a></li>
+      </ul>
+    </div>
+  </footer>
+  
+  
+  <script src="app.js"></script>
+  </body>
+  </html>
+  

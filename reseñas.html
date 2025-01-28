@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CryptoVision - Tu guía para invertir en criptomonedas.">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>CryptoVision</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header class="header">
+  <div class="header__logo">
+    <a href="index.html">
+        <img src="assets/logo.png" alt="Logo de CryptoVision" class="header__logo-img">
+        <h1 class="header__logo-text">CryptoVision</h1>
+        </a>
+  </div>
+  <nav class="header__nav">
+    <ul class="header__nav-list">
+      <li class="header__nav-item"><a href="inversiones.html" class="header__nav-link">Invierte en cripto</a></li>
+      <li class="header__nav-item"><a href="contacto.html" class="header__nav-link">Contacto</a></li>
+      <li class="header__nav-item"><a href="reseñas.html" class="header__nav-link">Reseñas</a></li>
+    </ul>
+  </nav>
+  <div class="header__search-theme">
+    <input type="text" placeholder="Buscar..." class="header__search-input" id="search-input">
+    <button class="header__search-button" aria-label="Buscar" onclick="toggleSearch()">🔍</button>
+    <button class="header__auth-button">Login</button>
+    <button class="header__auth-button register-button">Register</button>
+    <button class="header__theme-toggle" aria-label="Cambiar tema" onclick="toggleTheme()">
+      <span class="header__theme-icon" id="theme-icon">☀️</span>
+    </button>
+  </div>
+</header>
+
+<main class="reviews">
+    <!-- Sección de invitación a dejar una reseña -->
+    <section class="reviews__invitation">
+        <h2 class="reviews__title">💬 ¡Tu opinión importa!</h2>
+        <p class="reviews__subtitle">Comparte tu experiencia con nosotros. ¿Cómo podemos mejorar? ¡Nos encantaría saber tu opinión!</p>
+    </section>
+
+    <!-- Sección de formulario para dejar una reseña -->
+    <section class="reviews__form">
+        <form class="reviews__form-element" action="#" method="POST">
+            <label for="name" class="reviews__label">
+                <p>Nombre:</p>
+                <input type="text" id="name" name="name" class="reviews__input reviews__input--text" required>
+            </label>
+
+            <label for="review" class="reviews__label">
+                <p>Tu reseña:</p>
+                <textarea id="review" name="review" class="reviews__textarea" rows="4" required></textarea>
+            </label>
+
+            <button type="submit" class="reviews__button"><p>Enviar Reseña</p></button>
+        </form>
+    </section>
+
+    <!-- Sección de reseñas previas -->
+    <section class="reviews__previous">
+        <h3 class="reviews__previous-title">Reseñas de otros usuarios</h3>
+
+        <article class="reviews__item">
+            <p class="reviews__review-text">"¡Increíble servicio! Me ayudaron con todo lo que necesitaba. Definitivamente volveré a utilizarlo." - <span class="reviews__author">Juan Pérez</span></p>
+        </article>
+
+        <article class="reviews__item">
+            <p class="reviews__review-text">"La experiencia fue muy buena. El soporte es rápido y eficiente." - <span class="reviews__author">Ana Gómez</span></p>
+        </article>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="footer__container">
+      <p class="footer__text">© 2025 CryptoVision. Todos los derechos reservados.</p>
+      <ul class="footer__links">
+        <li><a href="terminos.html" class="footer__link">Términos y condiciones</a></li>
+        <li><a href="privacidad.html" class="footer__link">Política de privacidad</a></li>
+        <li><a href="contacto.html" class="footer__link">Contacto</a></li>
+      </ul>
+    </div>
+  </footer>
+  
+  
+  <script src="app.js"></script>
+  </body>
+  </html>
+  
